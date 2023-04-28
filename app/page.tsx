@@ -9,7 +9,7 @@ import Solutions from "../images/solution.png";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="w-screen h-screen bg-white text-white items-center">
+    <div className="w-screen h-screen text-white items-center bg-[#122133]">
       {/* @ts-ignore */}
       <Container>
         <div className="w-full flex flex-col items-center justify-center p-4 bg-[#122133]">
@@ -20,32 +20,34 @@ export default function Home() {
           <h1 className="text-white font-bold text-3xl ml-24">
             foreveryone.org
           </h1>
-          <div className="h-8 bg-[#0B1828]"></div>
         </div>
       </Container>
-      <Image src={Image1} alt="image1" />
-      <p className="text-md text-[#122133] p-4 text-justify">
-        Drinking bad water quality is not safe and can lead to illness and
-        death, particularly for children and vulnerable people. Falling sick due
-        to contaminated water has a detrimental effect on the quality of life
-        for families.
-      </p>
-      <h1 className="text-[#122133] font-bold text-xl ml-24 place-self-start">
-        Safe Water for Everyone
-      </h1>
-      <p className="text-md text-[#122133] p-4 text-justify">
-        Access to clean drinking water is a basic human right. Our aim is to
-        make sure everyone has access.We want to create solutions using
-        technologies that are effective, low cost, and sustainable.
-      </p>
-      <div className="flex items-center justify-evenly">
-        <Image src={Problem} alt="icon" width={50} />
-        <Image src={Focus} alt="icon" width={50} />
-        <Image src={Solutions} alt="icon" width={50} />
+      <div className="h-8 bg-[#0B1828] w-full"></div>
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center bg-white">
+        <Image src={Image1} alt="image1" className="text-center" />
+        <p className="text-md text-[#122133] p-4 text-justify">
+          Drinking bad water quality is not safe and can lead to illness and
+          death, particularly for children and vulnerable people. Falling sick
+          due to contaminated water has a detrimental effect on the quality of
+          life for families.
+        </p>
+        <h1 className="text-[#122133] font-bold text-xl ">
+          Safe Water for Everyone
+        </h1>
+        <p className="text-md text-[#122133] p-4 text-justify">
+          Access to clean drinking water is a basic human right. Our aim is to
+          make sure everyone has access.We want to create solutions using
+          technologies that are effective, low cost, and sustainable.
+        </p>
       </div>
-      <div className="flex items-center justify-center w-full mt-4">
+      <div className="flex flex-col items-center justify-evenly bg-white py-4 ">
+        <div className="flex w-full items-center justify-evenly">
+          <Image src={Problem} alt="icon" width={50} />
+          <Image src={Focus} alt="icon" width={50} />
+          <Image src={Solutions} alt="icon" width={50} />
+        </div>
         <Link href="/survey">
-          <button className="bg-[#0B1828] text-sm text-white px-4 py-2 text-center">
+          <button className="bg-[#0B1828] text-sm text-white px-4 py-2 text-center mt-4">
             Take our survey
           </button>
         </Link>

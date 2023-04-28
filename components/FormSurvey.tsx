@@ -109,9 +109,9 @@ function FormSurvey() {
           <h1 className="w-1/2 font-bold ">Do you buy bottled water ?</h1>
           <div className="w-1/2 flex justify-between items-center">
             <label>Yes</label>
-            <input type="radio" name="water" class="slectOne" />
+            <input type="radio" name="water" className="slectOne" />
             <label>No</label>
-            <input type="radio" name="water" class="slectOne" />
+            <input type="radio" name="water" className="slectOne" />
           </div>
         </div>
         <div className="flex items-center justify-between mt-4">
@@ -120,9 +120,9 @@ function FormSurvey() {
           </h1>
           <div className="w-1/2 flex justify-between items-center">
             <label>Yes</label>
-            <input type="radio" name="water" class="slectOne" />
+            <input type="radio" name="water" className="slectOne" />
             <label>No</label>
-            <input type="radio" name="water" class="slectOne" />
+            <input type="radio" name="water" className="slectOne" />
             <input
               className="p-2 text-black font-bold"
               type="text"
@@ -136,9 +136,9 @@ function FormSurvey() {
           </h1>
           <div className="w-1/2 flex justify-between items-center">
             <label>Yes</label>
-            <input type="radio" name="water" class="slectOne" />
+            <input type="radio" name="water" className="slectOne" />
             <label>No</label>
-            <input type="radio" name="water" class="slectOne" />
+            <input type="radio" name="water" className="slectOne" />
           </div>
         </div>
       </form>

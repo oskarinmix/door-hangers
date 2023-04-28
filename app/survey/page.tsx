@@ -262,6 +262,18 @@ function Survey(props: any) {
       </div>
     </div>
   );
+
+  const Information = () => {
+    return (
+      <form className="flex flex-col w-full items center justify-between ">
+        <input placeholder="Name" className="p-3 text-lg" required />
+        <input placeholder="Address" className="p-3 text-lg" required />
+        <input placeholder="City" className="p-3 text-lg" required />
+        <input placeholder="State" className="p-3 text-lg" required />
+        <input placeholder="Zip" className="p-3 text-lg" required />
+      </form>
+    );
+  };
   return (
     <div
       className={`h-screen w-screen flex flex-col justify-between bg-blue-200 ${gilroyBold.className} p-4`}
@@ -274,6 +286,7 @@ function Survey(props: any) {
       {step === 4 && hasFilter}
       {step === 5 && isOwner}
       {step === 6 && familyMembers}
+      {step === 7 && <Information />}
       {footer}
     </div>
   );

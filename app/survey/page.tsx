@@ -14,11 +14,15 @@ import Box from "@mui/material/Box";
 import StarIcon from "@mui/icons-material/Star";
 const gilroy = localFont({ src: "../../fonts/Gilroy-Light.otf" });
 const gilroyBold = localFont({ src: "../../fonts/Gilroy-ExtraBold.otf" });
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 function Survey(props: any) {
   const [step, setStep] = React.useState(0);
   const searchParams = useSearchParams();
   const user = searchParams.get("u");
+  const router = useRouter();
+  React.useEffect(()=>{
+    router.push('/')
+  },[])
   const users = {
     ghdtuDk: {
       name: "Andriuth Pena",
